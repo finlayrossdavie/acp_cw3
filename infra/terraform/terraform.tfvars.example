@@ -1,0 +1,19 @@
+aws_region  = "us-east-1"
+project_name = "cw3"
+
+# After `terraform apply` on ECR + first docker push:
+# backend_image = "123456789012.dkr.ecr.us-east-1.amazonaws.com/cw3-backend:latest"
+backend_image = "REPLACE_WITH_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/cw3-backend:latest"
+
+# Globally unique bucket name for the React build
+frontend_bucket_name = "cw3-midterm-tracker-frontend-YOURNAME"
+
+# Optional: ACM cert in same region as ALB for HTTPS on the API
+# certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+
+# Optional: override; otherwise Terraform sets CORS to the CloudFront HTTPS URL
+# cors_allowed_origins = "https://d111111abcdef8.cloudfront.net"
+
+# Optional Route 53 alias for the SPA (ACM in us-east-1 for CloudFront is separate if using custom domain on CloudFront)
+# domain_name     = "app.example.com"
+# route53_zone_id = "Z1234567890ABC"

@@ -24,6 +24,7 @@ services:
       - localstack
       - redis
     environment:
+      - AWS_USE_LOCALSTACK=true
       - NEWS_API_KEY=${NEWS_API_KEY}
       - GUARDIAN_API_KEY=${GUARDIAN_API_KEY}
       - FIVETHIRTYEIGHT_POLL_URL=${FIVETHIRTYEIGHT_POLL_URL}
@@ -43,6 +44,7 @@ services:
   frontend:
     build:
       context: ./state-of-the-race
+      target: dev
     container_name: cw3-frontend
     depends_on:
       - backend

@@ -1,0 +1,33 @@
+variable "aws_region" {
+  type        = string
+  description = "AWS region (e.g. us-east-1)"
+  default     = "us-east-1"
+}
+
+variable "project_name" {
+  type        = string
+  description = "Prefix for resource names"
+  default     = "cw3"
+}
+
+variable "backend_image" {
+  type        = string
+  description = "Full image URI pushed to ECR before first ECS deploy (e.g. 123456789012.dkr.ecr.us-east-1.amazonaws.com/cw3-backend:latest)"
+}
+
+variable "certificate_arn" {
+  type        = string
+  description = "ACM certificate ARN in the same region as the ALB for HTTPS (optional; leave empty for HTTP-only listener on port 80)"
+  default     = ""
+}
+
+variable "cors_allowed_origins" {
+  type        = string
+  description = "Comma-separated origins for CORS (must include https://<cloudfront-domain> after deploy)"
+  default     = ""
+}
+
+variable "frontend_bucket_name" {
+  type        = string
+  description = "Globally unique S3 bucket name for static frontend"
+}

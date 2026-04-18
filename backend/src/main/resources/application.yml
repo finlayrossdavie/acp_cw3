@@ -1,6 +1,15 @@
 server:
   port: 8080
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: when_authorized
+
 spring:
   data:
     redis:
@@ -9,9 +18,13 @@ spring:
 
 app:
   aws:
+    # false on AWS (ECS task role); true for Docker Compose + LocalStack
+    use-localstack: ${AWS_USE_LOCALSTACK:true}
     dynamodb-endpoint: ${AWS_DYNAMODB_ENDPOINT:http://localhost:4566}
     region: ${AWS_REGION:us-east-1}
-    table-name: ElectionRaces
+    table-name: ${DYNAMODB_TABLE_NAME:ElectionRaces}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:4173,http://localhost:4174}
   polling:
     fivethirtyeight-url: ${FIVETHIRTYEIGHT_POLL_URL:https://projects.fivethirtyeight.com/polls/data/president_polls.csv}
     recency-days: ${POLL_RECENCY_DAYS:30}

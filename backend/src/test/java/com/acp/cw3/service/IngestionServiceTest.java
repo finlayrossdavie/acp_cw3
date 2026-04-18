@@ -21,21 +21,25 @@ class IngestionServiceTest {
         Mockito.when(uriSpec.uri(anyString())).thenThrow(new RuntimeException("network down"));
 
         ProjectionService projectionService = new ProjectionService(3.0);
+        GoogleNewsClient googleNewsClient = Mockito.mock(GoogleNewsClient.class);
         PolymarketClient polymarketClient = Mockito.mock(PolymarketClient.class);
         Mockito.when(polymarketClient.fetchOddsByState()).thenThrow(new RuntimeException("network down"));
+        KalshiClient kalshiClient = Mockito.mock(KalshiClient.class);
+        OpenFecClient openFecClient = Mockito.mock(OpenFecClient.class);
         DynamoRaceRepository repository = Mockito.mock(DynamoRaceRepository.class);
         RedisCacheService cacheService = Mockito.mock(RedisCacheService.class);
 
         IngestionService service = new IngestionService(
                 restClient,
+                googleNewsClient,
                 projectionService,
                 polymarketClient,
+                kalshiClient,
+                openFecClient,
                 repository,
                 cacheService,
                 "http://example.com/polls.csv",
                 30,
-                "",
-                "https://newsapi.org/v2/everything",
                 "NC,GA,ME,MI,TX",
                 10,
                 5
