@@ -1,0 +1,82 @@
+[
+  {
+    "raceId": "NC-SEN",
+    "state": "NC",
+    "officeType": "SENATE",
+    "polls": [
+      {"pollster":"FallbackData","startDate":"2026-03-28","date":"2026-03-28","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate A","party":"DEM","pct":48.0},
+      {"pollster":"FallbackData","startDate":"2026-03-28","date":"2026-03-28","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate B","party":"REP","pct":47.0}
+    ],
+    "projection": {"demAvg":48.0,"repAvg":47.0},
+    "leadingParty": "DEM",
+    "margin": 1.0,
+    "color": "grey",
+    "news": [{"title":"Fallback headline NC","url":"https://example.com/nc","source":"Fallback"}],
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "sourceType": "FALLBACK"
+  },
+  {
+    "raceId": "GA-SEN",
+    "state": "GA",
+    "officeType": "SENATE",
+    "polls": [
+      {"pollster":"FallbackData","startDate":"2026-03-25","date":"2026-03-25","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate A","party":"DEM","pct":49.0},
+      {"pollster":"FallbackData","startDate":"2026-03-25","date":"2026-03-25","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate B","party":"REP","pct":46.0}
+    ],
+    "projection": {"demAvg":49.0,"repAvg":46.0},
+    "leadingParty": "DEM",
+    "margin": 3.0,
+    "color": "blue",
+    "news": [{"title":"Fallback headline GA","url":"https://example.com/ga","source":"Fallback"}],
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "sourceType": "FALLBACK"
+  },
+  {
+    "raceId": "ME-SEN",
+    "state": "ME",
+    "officeType": "SENATE",
+    "polls": [
+      {"pollster":"FallbackData","startDate":"2026-03-22","date":"2026-03-22","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate A","party":"DEM","pct":44.0},
+      {"pollster":"FallbackData","startDate":"2026-03-22","date":"2026-03-22","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate B","party":"REP","pct":48.0}
+    ],
+    "projection": {"demAvg":44.0,"repAvg":48.0},
+    "leadingParty": "REP",
+    "margin": 4.0,
+    "color": "red",
+    "news": [{"title":"Fallback headline ME","url":"https://example.com/me","source":"Fallback"}],
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "sourceType": "FALLBACK"
+  },
+  {
+    "raceId": "MI-SEN",
+    "state": "MI",
+    "officeType": "SENATE",
+    "polls": [
+      {"pollster":"FallbackData","startDate":"2026-03-20","date":"2026-03-20","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate A","party":"DEM","pct":47.0},
+      {"pollster":"FallbackData","startDate":"2026-03-20","date":"2026-03-20","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate B","party":"REP","pct":47.0}
+    ],
+    "projection": {"demAvg":47.0,"repAvg":47.0},
+    "leadingParty": "REP",
+    "margin": 0.0,
+    "color": "grey",
+    "news": [{"title":"Fallback headline MI","url":"https://example.com/mi","source":"Fallback"}],
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "sourceType": "FALLBACK"
+  },
+  {
+    "raceId": "TX-SEN",
+    "state": "TX",
+    "officeType": "SENATE",
+    "polls": [
+      {"pollster":"FallbackData","startDate":"2026-03-18","date":"2026-03-18","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate A","party":"DEM","pct":42.0},
+      {"pollster":"FallbackData","startDate":"2026-03-18","date":"2026-03-18","source":"FALLBACK","raceStage":"GENERAL","candidate":"Candidate B","party":"REP","pct":51.0}
+    ],
+    "projection": {"demAvg":42.0,"repAvg":51.0},
+    "leadingParty": "REP",
+    "margin": 9.0,
+    "color": "red",
+    "news": [{"title":"Fallback headline TX","url":"https://example.com/tx","source":"Fallback"}],
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "sourceType": "FALLBACK"
+  }
+]

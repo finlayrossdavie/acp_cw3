@@ -1,0 +1,35 @@
+Alabama
+Alaska
+Arkansas
+Colorado
+Delaware
+Florida (special)
+Georgia
+Idaho
+Illinois
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Massachusetts
+Michigan
+Minnesota
+Mississippi
+Montana
+Nebraska
+New Hampshire
+New Jersey
+New Mexico
+North Carolina
+Ohio (special)
+Oklahoma
+Oregon
+Rhode Island
+South Carolina
+South Dakota
+Tennessee
+Texas
+Virginia
+West Virginia
+Wyoming

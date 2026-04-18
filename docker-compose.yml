@@ -1,0 +1,52 @@
+services:
+  localstack:
+    image: localstack/localstack:3.5
+    container_name: cw3-localstack
+    environment:
+      - SERVICES=dynamodb
+      - AWS_DEFAULT_REGION=us-east-1
+    ports:
+      - "4566:4566"
+    volumes:
+      - "./infra/localstack/init:/etc/localstack/init/ready.d"
+
+  redis:
+    image: redis:7-alpine
+    container_name: cw3-redis
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: ./backend
+    container_name: cw3-backend
+    depends_on:
+      - localstack
+      - redis
+    environment:
+      - NEWS_API_KEY=${NEWS_API_KEY}
+      - GUARDIAN_API_KEY=${GUARDIAN_API_KEY}
+      - FIVETHIRTYEIGHT_POLL_URL=${FIVETHIRTYEIGHT_POLL_URL}
+      - POLYMARKET_ENABLED=${POLYMARKET_ENABLED}
+      - POLYMARKET_BASE_URL=${POLYMARKET_BASE_URL}
+      - POLYMARKET_EVENT_MAP=${POLYMARKET_EVENT_MAP}
+      - POLYMARKET_MARKET_MAP=${POLYMARKET_MARKET_MAP}
+      - OPEN_FEC_API_KEY=${OPEN_FEC_API_KEY}
+      - OPEN_FEC_BASE_URL=${OPEN_FEC_BASE_URL:-https://api.open.fec.gov/v1}
+      - AWS_DYNAMODB_ENDPOINT=http://localstack:4566
+      - AWS_REGION=us-east-1
+      - SPRING_DATA_REDIS_HOST=redis
+      - SPRING_DATA_REDIS_PORT=6379
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./state-of-the-race
+    container_name: cw3-frontend
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8080
+    ports:
+      - "5173:5173"

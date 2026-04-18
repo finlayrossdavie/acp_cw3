@@ -1,0 +1,214 @@
+{
+    "senate_races_2026": [
+      {
+        "state": "Alabama",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A reliably Republican seat in the Deep South, where the GOP primary is typically the most competitive phase of the election."
+      },
+      {
+        "state": "Alaska",
+        "primary_date": "2026-08-18",
+        "election_date": "2026-11-03",
+        "blurb": "A uniquely competitive Republican-held seat, heavily influenced by Alaska's open primary and ranked-choice voting system."
+      },
+      {
+        "state": "Arkansas",
+        "primary_date": "2026-03-03",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Republican seat in a state that has shifted solidly conservative over the past decade."
+      },
+      {
+        "state": "Colorado",
+        "primary_date": "2026-06-30",
+        "election_date": "2026-11-03",
+        "blurb": "A Democratic-held seat in a state that has rapidly trended blue in recent election cycles."
+      },
+      {
+        "state": "Delaware",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Democratic seat in a reliably blue Mid-Atlantic state."
+      },
+      {
+        "state": "Florida (special)",
+        "primary_date": "2026-08-18",
+        "election_date": "2026-11-03",
+        "blurb": "A high-profile special election to fill the remainder of the term for the seat vacated by Marco Rubio after his appointment as Secretary of State."
+      },
+      {
+        "state": "Georgia",
+        "primary_date": "2026-05-19",
+        "election_date": "2026-11-03",
+        "blurb": "A highly competitive battleground race as Democrat Jon Ossoff defends his seat in a state that narrowly backed Donald Trump in 2024."
+      },
+      {
+        "state": "Idaho",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A deeply conservative Republican stronghold where the general election is widely expected to remain uncompetitive."
+      },
+      {
+        "state": "Illinois",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A reliably Democratic seat in a blue-leaning state anchored by the heavy voting bloc of the Chicago metropolitan area."
+      },
+      {
+        "state": "Iowa",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A Republican-held seat in a state that has shifted from a perennial swing state to a solid conservative stronghold."
+      },
+      {
+        "state": "Kansas",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Republican seat, maintaining the state's long streak of electing GOP senators."
+      },
+      {
+        "state": "Kentucky",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A solidly Republican seat drawing national attention as it marks the first cycle following longtime leader Mitch McConnell's tenure."
+      },
+      {
+        "state": "Louisiana",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Republican seat decided by a unique majority-vote jungle primary system."
+      },
+      {
+        "state": "Maine",
+        "primary_date": "2026-06-09",
+        "election_date": "2026-11-03",
+        "blurb": "One of the most competitive races in the country, with Republican Susan Collins defending her seat in a Democratic-leaning state."
+      },
+      {
+        "state": "Massachusetts",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A deep-blue Democratic stronghold in New England where the primary is often the fiercest battle."
+      },
+      {
+        "state": "Michigan",
+        "primary_date": "2026-08-04",
+        "election_date": "2026-11-03",
+        "blurb": "A critical battleground race for a Democratic-held seat in a Rust Belt swing state, essential for control of the Senate."
+      },
+      {
+        "state": "Minnesota",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A Democratic-held seat in a midwestern state that leans blue but frequently hosts competitive statewide campaigns."
+      },
+      {
+        "state": "Mississippi",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safe Republican seat in a highly polarized Southern state with an inelastic voting base."
+      },
+      {
+        "state": "Montana",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A Republican-held seat in a western state that strongly favors the GOP in federal elections."
+      },
+      {
+        "state": "Nebraska",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A reliably Republican seat, previously filled via appointment and a 2024 special election, now up for a regular six-year term."
+      },
+      {
+        "state": "New Hampshire",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A historically swingy New England state featuring a Democratic-held seat that Republicans often target."
+      },
+      {
+        "state": "New Jersey",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Democratic seat in a state that reliably backs the blue column in federal elections."
+      },
+      {
+        "state": "New Mexico",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A Democratic-held seat in a southwestern state that has consistently favored Democrats in recent Senate races."
+      },
+      {
+        "state": "North Carolina",
+        "primary_date": "2026-03-03",
+        "election_date": "2026-11-03",
+        "blurb": "A highly competitive Republican-held seat in a perennial battleground state known for tight margins."
+      },
+      {
+        "state": "Ohio (special)",
+        "primary_date": "2026-05-05",
+        "election_date": "2026-11-03",
+        "blurb": "A high-stakes special election to fill the seat vacated by JD Vance following his election to the vice presidency."
+      },
+      {
+        "state": "Oklahoma",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A deeply conservative Republican seat where the winner of the GOP primary is heavily favored."
+      },
+      {
+        "state": "Oregon",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safely Democratic seat in a blue-leaning Pacific Northwest state."
+      },
+      {
+        "state": "Rhode Island",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A solid Democratic stronghold in New England where the incumbent party holds a heavy advantage."
+      },
+      {
+        "state": "South Carolina",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A reliably Republican seat in a Southern state with a strong conservative lean."
+      },
+      {
+        "state": "South Dakota",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A deeply red Republican seat where the GOP nominee faces little general election resistance."
+      },
+      {
+        "state": "Tennessee",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A safe Republican seat in a state that heavily favors conservative candidates statewide."
+      },
+      {
+        "state": "Texas",
+        "primary_date": "2026-03-03",
+        "election_date": "2026-11-03",
+        "blurb": "A Republican-held seat in a massive, slowly shifting state that Democrats repeatedly target with heavy investment."
+      },
+      {
+        "state": "Virginia",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "A Democratic-held seat in a state that has consistently trended blue in statewide federal elections over the last decade."
+      },
+      {
+        "state": "West Virginia",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "One of the reddest states in the nation, making this Republican-held seat highly secure for the GOP."
+      },
+      {
+        "state": "Wyoming",
+        "primary_date": "2026-TBD",
+        "election_date": "2026-11-03",
+        "blurb": "The most Republican-leaning state in the country, ensuring this seat remains safely in conservative hands."
+      }
+    ]
+  }

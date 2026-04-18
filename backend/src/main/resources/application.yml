@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    redis:
+      host: ${SPRING_DATA_REDIS_HOST:localhost}
+      port: ${SPRING_DATA_REDIS_PORT:6379}
+
+app:
+  aws:
+    dynamodb-endpoint: ${AWS_DYNAMODB_ENDPOINT:http://localhost:4566}
+    region: ${AWS_REGION:us-east-1}
+    table-name: ElectionRaces
+  polling:
+    fivethirtyeight-url: ${FIVETHIRTYEIGHT_POLL_URL:https://projects.fivethirtyeight.com/polls/data/president_polls.csv}
+    recency-days: ${POLL_RECENCY_DAYS:30}
+  news:
+    key: ${NEWS_API_KEY:}
+    base-url: https://newsapi.org/v2/everything
+    google-base-url: ${GOOGLE_NEWS_BASE_URL:https://news.google.com/rss/search}
+    guardian-base-url: ${GUARDIAN_BASE_URL:https://content.guardianapis.com/search}
+    guardian-key: ${GUARDIAN_API_KEY:}
+    ap-politics-feed: ${AP_POLITICS_FEED:https://feeds.apnews.com/apnews/politics}
+    ap-top-feed: ${AP_TOP_FEED:https://feeds.apnews.com/apnews/topnews}
+  polymarket:
+    enabled: ${POLYMARKET_ENABLED:true}
+    base-url: ${POLYMARKET_BASE_URL:https://gamma-api.polymarket.com/events/slug}
+    event-map: ${POLYMARKET_EVENT_MAP:}
+    market-map: ${POLYMARKET_MARKET_MAP:NC=North Carolina Senate;GA=Georgia Senate;ME=Maine Senate;MI=Michigan Senate;TX=Texas Senate}
+  finance:
+    openfec-key: ${OPEN_FEC_API_KEY:}
+    openfec-base-url: ${OPEN_FEC_BASE_URL:https://api.open.fec.gov/v1}
+  kalshi:
+    enabled: ${KALSHI_ENABLED:true}
+    markets-api-base-url: ${KALSHI_MARKETS_API_BASE_URL:https://api.elections.kalshi.com/trade-api/v2/markets}
+  states: NC,GA,ME,MI,TX
+  close-race-threshold: 3.0
+  poll-limit-per-state: 10
+  news-limit-per-state: 5
+  min-poll-year: 2016

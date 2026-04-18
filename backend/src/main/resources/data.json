@@ -1,0 +1,119 @@
+{
+    "senate_elections_2026": [
+      {
+        "state": "Maine",
+        "primary_date": "2026-06-09",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [
+              { "pollster": "Average of 3 Polls", "date": "N/A", "sample": "N/A", "results": { "Platner": 53.0, "Mills": 31.3, "LaFlamme": 2.0, "Costello": 1.5, "Other": null } },
+              { "pollster": "Maine People's Resource Center", "date": "2026-04-07", "sample": "514 LV", "results": { "Platner": 61.0, "Mills": 28.0, "LaFlamme": null, "Costello": 2.0, "Other": 9.0 } },
+              { "pollster": "Emerson College", "date": "2026-03-26", "sample": "530 LV", "results": { "Platner": 55.0, "Mills": 28.0, "LaFlamme": 2.0, "Costello": 1.0, "Other": 14.0 } },
+              { "pollster": "Quantus Insights", "date": "2026-03-09", "sample": "450 LV", "results": { "Platner": 43.0, "Mills": 38.0, "LaFlamme": null, "Costello": null, "Other": 19.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2026-03-04", "sample": "367 LV", "results": { "Platner": 46.0, "Mills": 39.0, "LaFlamme": null, "Costello": 4.0, "Other": 11.0 } },
+              { "pollster": "Univ. of New Hampshire", "date": "2026-02-24", "sample": "478 LV", "results": { "Platner": 64.0, "Mills": 26.0, "LaFlamme": 2.0, "Costello": 1.0, "Other": 7.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2025-12-10", "sample": "318 LV", "results": { "Platner": 37.0, "Mills": 47.0, "LaFlamme": null, "Costello": 1.0, "Other": 15.0 } },
+              { "pollster": "Maine People's Resource Center", "date": "2025-11-12", "sample": "N/A", "results": { "Platner": 41.0, "Mills": 39.0, "LaFlamme": null, "Costello": null, "Other": 20.0 } },
+              { "pollster": "Univ. of New Hampshire", "date": "2025-10-23", "sample": "506 LV", "results": { "Platner": 58.0, "Mills": 24.0, "LaFlamme": 0.0, "Costello": 1.0, "Other": 17.0 } }
+            ],
+            "republican": [
+              { "pollster": "Univ. of New Hampshire", "date": "2026-02-24", "sample": "406 LV", "results": { "Collins": 67.0, "Smeriglio": 6.0, "Calabrese": 1.0, "Other": 26.0 } },
+              { "pollster": "Univ. of New Hampshire", "date": "2025-10-23", "sample": "408 LV", "results": { "Collins": 66.0, "Smeriglio": 1.0, "Calabrese": 1.0, "Other": 32.0 } }
+            ]
+          },
+          "general_election": {
+            "matchup_platner_vs_collins": [
+              { "pollster": "Average of 4 Polls", "date": "N/A", "sample": "N/A", "results": { "Platner": 47.3, "Collins": 41.0, "Other": null } },
+              { "pollster": "Maine People's Resource Center", "date": "2026-04-07", "sample": "1,167 LV", "results": { "Platner": 48.0, "Collins": 39.0, "Other": 13.0 } },
+              { "pollster": "Emerson College", "date": "2026-03-26", "sample": "1,075 LV", "results": { "Platner": 48.0, "Collins": 41.0, "Other": 11.0 } },
+              { "pollster": "OnMessage", "date": "2026-03-10", "sample": "600 LV", "results": { "Platner": 44.0, "Collins": 42.0, "Other": 14.0 } },
+              { "pollster": "Quantus Insights", "date": "2026-03-09", "sample": "800 LV", "results": { "Platner": 49.0, "Collins": 42.0, "Other": 9.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2026-03-04", "sample": "810 LV", "results": { "Platner": 44.0, "Collins": 40.0, "Other": 16.0 } },
+              { "pollster": "Univ. of New Hampshire", "date": "2026-02-24", "sample": "1,120 LV", "results": { "Platner": 49.0, "Collins": 38.0, "Other": 13.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2025-12-10", "sample": "820 LV", "results": { "Platner": 43.0, "Collins": 42.0, "Other": 15.0 } },
+              { "pollster": "Maine People's Resource Center", "date": "2025-11-12", "sample": "783 RV", "results": { "Platner": 45.0, "Collins": 41.0, "Other": 14.0 } }
+            ],
+            "matchup_mills_vs_collins": [
+              { "pollster": "Average of 4 Polls", "date": "N/A", "sample": "N/A", "results": { "Mills": 43.3, "Collins": 43.8, "Other": null } },
+              { "pollster": "Maine People's Resource Center", "date": "2026-04-07", "sample": "1,167 LV", "results": { "Mills": 42.0, "Collins": 45.0, "Other": 13.0 } },
+              { "pollster": "Emerson College", "date": "2026-03-26", "sample": "1,075 LV", "results": { "Mills": 46.0, "Collins": 43.0, "Other": 11.0 } },
+              { "pollster": "OnMessage", "date": "2026-03-10", "sample": "600 LV", "results": { "Mills": 42.0, "Collins": 42.0, "Other": 16.0 } },
+              { "pollster": "Quantus Insights", "date": "2026-03-09", "sample": "800 LV", "results": { "Mills": 43.0, "Collins": 45.0, "Other": 12.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2026-03-04", "sample": "810 LV", "results": { "Mills": 44.0, "Collins": 44.0, "Other": 12.0 } },
+              { "pollster": "Univ. of New Hampshire", "date": "2026-02-24", "sample": "1,120 LV", "results": { "Mills": 41.0, "Collins": 40.0, "Other": 19.0 } },
+              { "pollster": "Pan Atlantic Research", "date": "2025-12-10", "sample": "820 LV", "results": { "Mills": 43.0, "Collins": 43.0, "Other": 14.0 } },
+              { "pollster": "Maine People's Resource Center", "date": "2025-11-12", "sample": "783 RV", "results": { "Mills": 42.0, "Collins": 46.0, "Other": 12.0 } }
+            ]
+          }
+        }
+      },
+      {
+        "state": "North Carolina",
+        "primary_date": "2026-03-03",
+        "primaries_held": true,
+        "polls": {
+          "general_election": {
+            "matchup_cooper_vs_whatley": [
+              { "pollster": "Average of 5 Polls", "date": "N/A", "sample": "N/A", "results": { "Cooper": 48.6, "Whatley": 39.0, "Other": null } },
+              { "pollster": "Quantus Insights", "date": "2026-04-02", "sample": "987 LV", "results": { "Cooper": 49.0, "Whatley": 44.0, "Other": 7.0 } },
+              { "pollster": "Catawba College", "date": "2026-03-31", "sample": "871 LV", "results": { "Cooper": 48.0, "Whatley": 34.0, "Other": 18.0 } },
+              { "pollster": "Nexus/Strategic Partners Solutions", "date": "2026-03-27", "sample": "800 LV", "results": { "Cooper": 50.0, "Whatley": 32.0, "Other": 18.0 } },
+              { "pollster": "Harper Polling", "date": "2026-03-26", "sample": "600 LV", "results": { "Cooper": 49.0, "Whatley": 41.0, "Other": 10.0 } },
+              { "pollster": "Public Policy Polling", "date": "2026-03-16", "sample": "556 RV", "results": { "Cooper": 47.0, "Whatley": 44.0, "Other": 9.0 } },
+              { "pollster": "Change Research", "date": "2026-02-20", "sample": "1,069 RV", "results": { "Cooper": 50.0, "Whatley": 40.0, "Other": 10.0 } },
+              { "pollster": "Harper Polling", "date": "2025-11-13", "sample": "600 LV", "results": { "Cooper": 47.0, "Whatley": 39.0, "Other": 14.0 } },
+              { "pollster": "Harper Polling", "date": "2025-09-18", "sample": "600 LV", "results": { "Cooper": 46.0, "Whatley": 42.0, "Other": 12.0 } },
+              { "pollster": "Emerson College", "date": "2025-08-01", "sample": "1,000 RV", "results": { "Cooper": 47.0, "Whatley": 41.0, "Other": 12.0 } },
+              { "pollster": "Victory Insights", "date": "2025-07-31", "sample": "600 LV", "results": { "Cooper": 43.0, "Whatley": 40.0, "Other": 17.0 } }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Michigan",
+        "primary_date": "2026-08-04",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [
+              { "pollster": "Data for Progress", "date": "2026-04-15", "sample": "515 LV", "results": { "Stevens": 23.0, "El-Sayed": 22.0, "McMorrow": 22.0, "Other": 33.0 } },
+              { "pollster": "Upswing Research", "date": "2026-03-12", "sample": "600 LV", "results": { "Stevens": 27.0, "El-Sayed": 23.0, "McMorrow": 25.0, "Other": 25.0 } },
+              { "pollster": "Emerson College", "date": "2026-01-29", "sample": "491 LV", "results": { "Stevens": 17.0, "El-Sayed": 16.0, "McMorrow": 22.0, "Other": 45.0 } },
+              { "pollster": "Mitchell Research", "date": "2025-12-02", "sample": "261 LV", "results": { "Stevens": 27.0, "El-Sayed": 16.0, "McMorrow": 24.0, "Other": 33.0 } },
+              { "pollster": "Rosetta Stone", "date": "2025-11-06", "sample": "287 LV", "results": { "Stevens": 26.0, "El-Sayed": 20.0, "McMorrow": 25.0, "Other": 29.0 } }
+            ]
+          },
+          "general_election": {
+            "matchup_stevens_vs_rogers": [
+              { "pollster": "Average of 2 Polls", "date": "N/A", "sample": "N/A", "results": { "Stevens": 45.5, "Rogers": 43.0, "Other": null } },
+              { "pollster": "Emerson College", "date": "2026-01-29", "sample": "1,000 LV", "results": { "Stevens": 47.0, "Rogers": 42.0, "Other": 11.0 } },
+              { "pollster": "Glengariff Group", "date": "2026-01-14", "sample": "600 LV", "results": { "Stevens": 44.0, "Rogers": 44.0, "Other": 12.0 } },
+              { "pollster": "Mitchell Research", "date": "2025-12-02", "sample": "616 LV", "results": { "Stevens": 40.0, "Rogers": 42.0, "Other": 18.0 } },
+              { "pollster": "EPIC-MRA", "date": "2025-11-14", "sample": "600 LV", "results": { "Stevens": 44.0, "Rogers": 42.0, "Other": 14.0 } },
+              { "pollster": "Rosetta Stone", "date": "2025-11-06", "sample": "637 LV", "results": { "Stevens": 40.0, "Rogers": 47.0, "Other": 13.0 } },
+              { "pollster": "Glengariff Group", "date": "2025-05-28", "sample": "600 RV", "results": { "Stevens": 45.0, "Rogers": 44.0, "Other": 11.0 } },
+              { "pollster": "Target Insyght", "date": "2025-03-08", "sample": "600 RV", "results": { "Stevens": 35.0, "Rogers": 41.0, "Other": 24.0 } }
+            ],
+            "matchup_mcmorrow_vs_rogers": [
+              { "pollster": "Average of 2 Polls", "date": "N/A", "sample": "N/A", "results": { "McMorrow": 44.0, "Rogers": 44.5, "Other": null } },
+              { "pollster": "Emerson College", "date": "2026-01-29", "sample": "1,000 LV", "results": { "McMorrow": 46.0, "Rogers": 43.0, "Other": 11.0 } },
+              { "pollster": "Glengariff Group", "date": "2026-01-14", "sample": "600 LV", "results": { "McMorrow": 42.0, "Rogers": 46.0, "Other": 12.0 } },
+              { "pollster": "Mitchell Research", "date": "2025-12-02", "sample": "616 LV", "results": { "McMorrow": 38.0, "Rogers": 44.0, "Other": 18.0 } },
+              { "pollster": "EPIC-MRA", "date": "2025-11-14", "sample": "600 LV", "results": { "McMorrow": 43.0, "Rogers": 42.0, "Other": 15.0 } },
+              { "pollster": "Rosetta Stone", "date": "2025-11-06", "sample": "637 LV", "results": { "McMorrow": 39.0, "Rogers": 46.0, "Other": 15.0 } },
+              { "pollster": "Glengariff Group", "date": "2025-05-28", "sample": "600 RV", "results": { "McMorrow": 42.0, "Rogers": 46.0, "Other": 12.0 } }
+            ],
+            "matchup_elsayed_vs_rogers": [
+              { "pollster": "Average of 2 Polls", "date": "N/A", "sample": "N/A", "results": { "El-Sayed": 42.5, "Rogers": 45.5, "Other": null } },
+              { "pollster": "Emerson College", "date": "2026-01-29", "sample": "1,000 LV", "results": { "El-Sayed": 43.0, "Rogers": 43.0, "Other": 14.0 } },
+              { "pollster": "Glengariff Group", "date": "2026-01-14", "sample": "600 LV", "results": { "El-Sayed": 42.0, "Rogers": 48.0, "Other": 10.0 } },
+              { "pollster": "Mitchell Research", "date": "2025-12-02", "sample": "616 LV", "results": { "El-Sayed": 38.0, "Rogers": 41.0, "Other": 21.0 } },
+              { "pollster": "Rosetta Stone", "date": "2025-11-06", "sample": "637 LV", "results": { "El-Sayed": 31.0, "Rogers": 45.0, "Other": 24.0 } },
+              { "pollster": "Glengariff Group", "date": "2025-05-28", "sample": "600 RV", "results": { "El-Sayed": 41.0, "Rogers": 47.0, "Other": 12.0 } }
+            ]
+          }
+        }
+      }
+    ]
+  }

@@ -1,0 +1,144 @@
+{
+    "senate_incumbency_2026": [
+      {
+        "state": "Alabama",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Alaska",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Arkansas",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Colorado",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Delaware",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Florida (special)",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Georgia",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Idaho",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Illinois",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Iowa",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Kansas",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Kentucky",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Louisiana",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Maine",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Massachusetts",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Michigan",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Minnesota",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Mississippi",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Montana",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Nebraska",
+        "current_party": "Republican"
+      },
+      {
+        "state": "New Hampshire",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "New Jersey",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "New Mexico",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "North Carolina",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Ohio (special)",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Oklahoma",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Oregon",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "Rhode Island",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "South Carolina",
+        "current_party": "Republican"
+      },
+      {
+        "state": "South Dakota",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Tennessee",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Texas",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Virginia",
+        "current_party": "Democrat"
+      },
+      {
+        "state": "West Virginia",
+        "current_party": "Republican"
+      },
+      {
+        "state": "Wyoming",
+        "current_party": "Republican"
+      }
+    ]
+  }

@@ -1,0 +1,681 @@
+{
+    "senate_elections_2026": [
+      {
+        "state": "Michigan",
+        "primary_date": "2026-08-04",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-04-02/2026-04-13",
+                "sample": "Avg",
+                "results": {
+                  "McMorrow": 23.0,
+                  "El-Sayed": 23.0,
+                  "Stevens": 18.0,
+                  "Other": 36.0
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-04-11/2026-04-13",
+                "sample": "N/A",
+                "results": {
+                  "McMorrow": 24.0,
+                  "El-Sayed": 24.0,
+                  "Stevens": 13.0,
+                  "Other": 39.0
+                }
+              },
+              {
+                "pollster": "Data for Progress",
+                "date": "2026-04-02/2026-04-08",
+                "sample": "N/A",
+                "results": {
+                  "McMorrow": 22.0,
+                  "El-Sayed": 22.0,
+                  "Stevens": 23.0,
+                  "Other": 33.0
+                }
+              }
+            ],
+            "republican": []
+          },
+          "general_election": {
+            "matchup_rogers_vs_stevens": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-11-06/2026-01-25",
+                "sample": "Avg",
+                "results": {
+                  "Stevens": 43.8,
+                  "Rogers": 42.5,
+                  "Other": 13.7
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-01-24/2026-01-25",
+                "sample": "1000 RV",
+                "results": {
+                  "Stevens": 47.0,
+                  "Rogers": 42.0,
+                  "Other": 11.0
+                }
+              },
+              {
+                "pollster": "Detroit News/WDIV-TV",
+                "date": "2026-01-02/2026-01-06",
+                "sample": "600 LV",
+                "results": {
+                  "Stevens": 44.0,
+                  "Rogers": 44.0,
+                  "Other": 12.0
+                }
+              },
+              {
+                "pollster": "MIRS/Mitchell Research",
+                "date": "2025-11-18/2025-11-21",
+                "sample": "616 LV",
+                "results": {
+                  "Stevens": 40.0,
+                  "Rogers": 42.0,
+                  "Other": 18.0
+                }
+              },
+              {
+                "pollster": "EPIC-MRA",
+                "date": "2025-11-06/2025-11-11",
+                "sample": "600 RV",
+                "results": {
+                  "Stevens": 44.0,
+                  "Rogers": 42.0,
+                  "Other": 14.0
+                }
+              }
+            ],
+            "matchup_rogers_vs_mcmorrow": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-11-06/2026-01-25",
+                "sample": "Avg",
+                "results": {
+                  "McMorrow": 42.3,
+                  "Rogers": 43.8,
+                  "Other": 13.9
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-01-24/2026-01-25",
+                "sample": "1000 RV",
+                "results": {
+                  "McMorrow": 46.0,
+                  "Rogers": 43.0,
+                  "Other": 11.0
+                }
+              },
+              {
+                "pollster": "Detroit News/WDIV-TV",
+                "date": "2026-01-02/2026-01-06",
+                "sample": "600 LV",
+                "results": {
+                  "McMorrow": 42.0,
+                  "Rogers": 46.0,
+                  "Other": 12.0
+                }
+              },
+              {
+                "pollster": "MIRS/Mitchell Research",
+                "date": "2025-11-18/2025-11-21",
+                "sample": "616 LV",
+                "results": {
+                  "McMorrow": 38.0,
+                  "Rogers": 44.0,
+                  "Other": 18.0
+                }
+              },
+              {
+                "pollster": "EPIC-MRA",
+                "date": "2025-11-06/2025-11-11",
+                "sample": "600 RV",
+                "results": {
+                  "McMorrow": 43.0,
+                  "Rogers": 42.0,
+                  "Other": 15.0
+                }
+              }
+            ],
+            "matchup_rogers_vs_el_sayed": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-11-18/2026-01-25",
+                "sample": "Avg",
+                "results": {
+                  "El-Sayed": 41.0,
+                  "Rogers": 44.0,
+                  "Other": 15.0
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-01-24/2026-01-25",
+                "sample": "1000 RV",
+                "results": {
+                  "El-Sayed": 43.0,
+                  "Rogers": 43.0,
+                  "Other": 14.0
+                }
+              },
+              {
+                "pollster": "Detroit News/WDIV-TV",
+                "date": "2026-01-02/2026-01-06",
+                "sample": "600 LV",
+                "results": {
+                  "El-Sayed": 42.0,
+                  "Rogers": 48.0,
+                  "Other": 10.0
+                }
+              },
+              {
+                "pollster": "MIRS/Mitchell Research",
+                "date": "2025-11-18/2025-11-21",
+                "sample": "616 LV",
+                "results": {
+                  "El-Sayed": 38.0,
+                  "Rogers": 41.0,
+                  "Other": 21.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "North Carolina",
+        "primary_date": "2026-03-03",
+        "primaries_held": true,
+        "polls": {
+          "primary_election": {
+            "democratic": [],
+            "republican": []
+          },
+          "general_election": {
+            "matchup_cooper_vs_whatley": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-01-31/2026-04-01",
+                "sample": "Avg",
+                "results": {
+                  "Cooper": 48.8,
+                  "Whatley": 42.3,
+                  "Other": 8.9
+                }
+              },
+              {
+                "pollster": "Quantus Insights",
+                "date": "2026-03-31/2026-04-01",
+                "sample": "987 LV",
+                "results": {
+                  "Cooper": 49.0,
+                  "Whatley": 44.0,
+                  "Other": 7.0
+                }
+              },
+              {
+                "pollster": "Carolina Journal/Harper",
+                "date": "2026-03-22/2026-03-23",
+                "sample": "600 LV",
+                "results": {
+                  "Cooper": 49.0,
+                  "Whatley": 41.0,
+                  "Other": 10.0
+                }
+              },
+              {
+                "pollster": "PPP",
+                "date": "2026-03-13/2026-03-14",
+                "sample": "556 RV",
+                "results": {
+                  "Cooper": 47.0,
+                  "Whatley": 44.0,
+                  "Other": 9.0
+                }
+              },
+              {
+                "pollster": "Change Research",
+                "date": "2026-01-31/2026-02-04",
+                "sample": "1069 LV",
+                "results": {
+                  "Cooper": 50.0,
+                  "Whatley": 40.0,
+                  "Other": 10.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Georgia",
+        "primary_date": "2026-05-19",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "republican": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-10-13/2026-03-02",
+                "sample": "Avg",
+                "results": {
+                  "Collins": 30.3,
+                  "Carter": 16.8,
+                  "Dooley": 10.8,
+                  "Other": 42.1
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-28/2026-03-02",
+                "sample": "N/A",
+                "results": {
+                  "Collins": 30.0,
+                  "Carter": 16.0,
+                  "Dooley": 10.0,
+                  "Other": 44.0
+                }
+              },
+              {
+                "pollster": "Quantus Insights",
+                "date": "2026-02-17/2026-02-18",
+                "sample": "N/A",
+                "results": {
+                  "Collins": 36.0,
+                  "Carter": 11.0,
+                  "Dooley": 9.0,
+                  "Other": 44.0
+                }
+              }
+            ]
+          },
+          "general_election": {
+            "matchup_ossoff_vs_collins": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-04-24/2026-03-02",
+                "sample": "Avg",
+                "results": {
+                  "Ossoff": 45.0,
+                  "Collins": 42.2,
+                  "Other": 12.8
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-28/2026-03-02",
+                "sample": "1000 LV",
+                "results": {
+                  "Ossoff": 48.0,
+                  "Collins": 43.0,
+                  "Other": 9.0
+                }
+              },
+              {
+                "pollster": "Trafalgar",
+                "date": "2025-04-24/2025-04-27",
+                "sample": "1426 LV",
+                "results": {
+                  "Ossoff": 48.0,
+                  "Collins": 43.0,
+                  "Other": 9.0
+                }
+              }
+            ],
+            "matchup_ossoff_vs_carter": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-05-15/2026-03-02",
+                "sample": "Avg",
+                "results": {
+                  "Ossoff": 44.3,
+                  "Carter": 40.8,
+                  "Other": 14.9
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-28/2026-03-02",
+                "sample": "1000 LV",
+                "results": {
+                  "Ossoff": 47.0,
+                  "Carter": 44.0,
+                  "Other": 9.0
+                }
+              }
+            ],
+            "matchup_ossoff_vs_dooley": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-07-28/2026-03-02",
+                "sample": "Avg",
+                "results": {
+                  "Ossoff": 45.0,
+                  "Dooley": 38.3,
+                  "Other": 16.7
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-28/2026-03-02",
+                "sample": "1000 LV",
+                "results": {
+                  "Ossoff": 49.0,
+                  "Dooley": 41.0,
+                  "Other": 10.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Texas",
+        "primary_date": "2026-03-03",
+        "primaries_held": true,
+        "polls": {
+          "primary_election": {
+            "republican": [
+              {
+                "pollster": "Current Results",
+                "date": "2026-03-03",
+                "sample": "Official",
+                "results": {
+                  "Cornyn": 41.9,
+                  "Paxton": 40.7,
+                  "Hunt": 13.5,
+                  "Other": 3.9
+                }
+              },
+              {
+                "pollster": "RCP Average",
+                "date": "2026-02-13/2026-03-02",
+                "sample": "Avg",
+                "results": {
+                  "Paxton": 39.2,
+                  "Cornyn": 35.4,
+                  "Hunt": 15.8,
+                  "Other": 9.6
+                }
+              }
+            ],
+            "democratic": []
+          },
+          "general_election": {
+            "matchup_cornyn_vs_talarico": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-01-10/2026-01-31",
+                "sample": "Avg",
+                "results": {
+                  "Cornyn": 45.5,
+                  "Talarico": 43.5,
+                  "Other": 11.0
+                }
+              },
+              {
+                "pollster": "University of Houston",
+                "date": "2026-01-20/2026-01-31",
+                "sample": "1502 LV",
+                "results": {
+                  "Cornyn": 44.0,
+                  "Talarico": 43.0,
+                  "Other": 13.0
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-01-10/2026-01-12",
+                "sample": "1165 LV",
+                "results": {
+                  "Cornyn": 47.0,
+                  "Talarico": 44.0,
+                  "Other": 9.0
+                }
+              }
+            ],
+            "matchup_paxton_vs_talarico": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-01-10/2026-01-31",
+                "sample": "Avg",
+                "results": {
+                  "Paxton": 46.0,
+                  "Talarico": 45.0,
+                  "Other": 9.0
+                }
+              },
+              {
+                "pollster": "University of Houston",
+                "date": "2026-01-20/2026-01-31",
+                "sample": "1502 LV",
+                "results": {
+                  "Paxton": 46.0,
+                  "Talarico": 44.0,
+                  "Other": 10.0
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2026-01-10/2026-01-12",
+                "sample": "1165 LV",
+                "results": {
+                  "Paxton": 46.0,
+                  "Talarico": 46.0,
+                  "Other": 8.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Maine",
+        "primary_date": "2026-06-09",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-02-12/2026-03-31",
+                "sample": "Avg",
+                "results": {
+                  "Platner": 53.8,
+                  "Mills": 31.8,
+                  "LaFlamme": 2.0,
+                  "Costello": 2.0,
+                  "Other": 10.4
+                }
+              },
+              {
+                "pollster": "MPRC",
+                "date": "2026-03-20/2026-03-31",
+                "sample": "N/A",
+                "results": {
+                  "Platner": 61.0,
+                  "Mills": 28.0,
+                  "Other": 11.0
+                }
+              }
+            ],
+            "republican": []
+          },
+          "general_election": {
+            "matchup_collins_vs_mills": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-02-12/2026-03-31",
+                "sample": "Avg",
+                "results": {
+                  "Collins": 43.4,
+                  "Mills": 43.2,
+                  "Other": 13.4
+                }
+              }
+            ],
+            "matchup_collins_vs_platner": [
+              {
+                "pollster": "RCP Average",
+                "date": "2026-02-12/2026-03-31",
+                "sample": "Avg",
+                "results": {
+                  "Platner": 47.6,
+                  "Collins": 40.0,
+                  "Other": 12.4
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Minnesota",
+        "primary_date": "2026-08-11",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [
+              {
+                "pollster": "PPP (D)",
+                "date": "2026-02-14/2026-02-15",
+                "sample": "668 LV",
+                "results": {
+                  "Flanagan": 52.0,
+                  "Craig": 22.0,
+                  "Other": 26.0
+                }
+              }
+            ],
+            "republican": []
+          },
+          "general_election": {
+            "matchup_flanagan_vs_tafoya": [
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-06/2026-02-08",
+                "sample": "1000 RV",
+                "results": {
+                  "Flanagan": 47.0,
+                  "Tafoya": 41.0,
+                  "Other": 12.0
+                }
+              }
+            ],
+            "matchup_craig_vs_tafoya": [
+              {
+                "pollster": "Emerson",
+                "date": "2026-02-06/2026-02-08",
+                "sample": "1000 RV",
+                "results": {
+                  "Craig": 47.0,
+                  "Tafoya": 40.0,
+                  "Other": 13.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Ohio",
+        "primary_date": "2026-05-05",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "democratic": [],
+            "republican": []
+          },
+          "general_election": {
+            "matchup_husted_vs_brown": [
+              {
+                "pollster": "RCP Average",
+                "date": "2025-10-02/2026-03-14",
+                "sample": "Avg",
+                "results": {
+                  "Husted": 47.7,
+                  "Brown": 46.3,
+                  "Other": 6.0
+                }
+              },
+              {
+                "pollster": "Quantus Insights",
+                "date": "2026-03-13/2026-03-14",
+                "sample": "784 LV",
+                "results": {
+                  "Husted": 46.0,
+                  "Brown": 44.0,
+                  "Other": 10.0
+                }
+              },
+              {
+                "pollster": "Emerson",
+                "date": "2025-12-06/2025-12-08",
+                "sample": "850 RV",
+                "results": {
+                  "Husted": 49.0,
+                  "Brown": 46.0,
+                  "Other": 5.0
+                }
+              },
+              {
+                "pollster": "Bowling Green/YouGov",
+                "date": "2025-10-02/2025-10-14",
+                "sample": "800 RV",
+                "results": {
+                  "Husted": 48.0,
+                  "Brown": 49.0,
+                  "Other": 3.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "state": "Alaska",
+        "primary_date": "2026-08-18",
+        "primaries_held": false,
+        "polls": {
+          "primary_election": {
+            "all_party_primary": []
+          },
+          "general_election": {
+            "matchup_peltola_vs_sullivan": [
+              {
+                "pollster": "Data for Progress",
+                "date": "2025-10-17/2025-11-23",
+                "sample": "823 LV",
+                "results": {
+                  "Peltola": 46.0,
+                  "Sullivan": 45.0,
+                  "Other": 9.0
+                }
+              },
+              {
+                "pollster": "Data for Progress",
+                "date": "2025-07-21/2025-07-27",
+                "sample": "678 LV",
+                "results": {
+                  "Peltola": 45.0,
+                  "Sullivan": 46.0,
+                  "Other": 9.0
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
