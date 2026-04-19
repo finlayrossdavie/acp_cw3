@@ -8,8 +8,12 @@ backend_image = "REPLACE_WITH_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/cw3-bac
 # Globally unique bucket name for the React build
 frontend_bucket_name = "cw3-midterm-tracker-frontend-YOURNAME"
 
-# Optional: ACM cert in same region as ALB for HTTPS on the API
+# Required for browser access from CloudFront (HTTPS): ACM cert in the same region as the ALB
+# (eu-north-1 ALB → ACM cert in eu-north-1). Then use terraform output api_base_url_https for VITE_API_BASE_URL.
 # certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+
+# Secrets Manager JSON secret name (must exist before apply; see infra/README.md §4)
+# secrets_manager_secret_name = "cw3-secrets"
 
 # Optional: override; otherwise Terraform sets CORS to the CloudFront HTTPS URL
 # cors_allowed_origins = "https://d111111abcdef8.cloudfront.net"

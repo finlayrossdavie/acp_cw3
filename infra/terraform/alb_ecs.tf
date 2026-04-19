@@ -83,6 +83,12 @@ resource "aws_ecs_task_definition" "backend" {
         { name = "DYNAMODB_TABLE_NAME", value = aws_dynamodb_table.election_races.name },
         { name = "CORS_ALLOWED_ORIGINS", value = local.cors_effective }
       ]
+      secrets = [
+        for k in local.cw3_secret_env_keys : {
+          name      = k
+          valueFrom = "${data.aws_secretsmanager_secret.cw3.arn}:${k}::"
+        }
+      ]
       logConfiguration = {
         logDriver = "awslogs"
         options = {

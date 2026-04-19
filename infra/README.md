@@ -66,30 +66,44 @@ terraform apply
 
 This refreshes the ECS task definition with the image and correct **CORS** / **DynamoDB** env vars.
 
-## 4. Add API keys to ECS
+## 4. Secrets Manager (`cw3-secrets`) and ECS
 
-The task definition only sets core env vars. In the **AWS Console → ECS → Task definition → Create new revision**, add secrets (e.g. from **Secrets Manager**) or plain env for:
+Create **one** secret in **AWS Secrets Manager** named `cw3-secrets` (or set `secrets_manager_secret_name` in `terraform.tfvars`). Store **plain JSON** whose keys match what the app expects — Terraform injects each key as an environment variable on the container.
 
-`GUARDIAN_API_KEY`, `OPEN_FEC_API_KEY`, Polymarket-related vars, etc., matching [`docker-compose.yml`](../docker-compose.yml) / [`application.yml`](../backend/src/main/resources/application.yml).
+Required JSON keys (see [`secrets.tf`](terraform/secrets.tf) and [`.env`](../.env) / [`application.yml`](../backend/src/main/resources/application.yml)):
 
-Redeploy the service after updating the task definition.
+```json
+{
+  "GUARDIAN_API_KEY": "...",
+  "OPEN_FEC_API_KEY": "..."
+}
+```
+
+Terraform grants the **ECS task execution role** `secretsmanager:GetSecretValue` on that secret and adds the corresponding `secrets` entries to the task definition. After `terraform apply`, ECS starts a new deployment; no manual console edits are required unless you add or rename keys (then update `local.cw3_secret_env_keys` in `secrets.tf`).
+
+If the secret uses a **customer-managed KMS key**, add `kms:Decrypt` on that key to the execution role policy (not included by default).
+
+**Console-only alternative:** skip Terraform secrets wiring and add **Secrets** manually on a new task definition revision (same `valueFrom` pattern: `arn:...:KEY::`).
 
 ## 5. Build and upload the frontend
 
-Point the UI at the **ALB** URL from Terraform output (`api_base_url_http` or `api_base_url_https`):
+Point the UI at the **ALB** URL from Terraform output. For the app served on **CloudFront (HTTPS)**, use **`api_base_url_https`** (requires `certificate_arn` in `terraform.tfvars` and `terraform apply`). **`http://` from an HTTPS page is blocked** (mixed content).
 
 ```bash
-cd state-of-the-race
-export VITE_API_BASE_URL="http://cw3-api-xxxx.us-east-1.elb.amazonaws.com"   # use your output
+cd infra/terraform
+API_BASE="$(terraform output -raw api_base_url_https)"
+BUCKET="$(terraform output -raw frontend_bucket_id)"
+DIST_ID="$(terraform output -raw cloudfront_distribution_id)"
+
+cd ../../state-of-the-race
+export VITE_API_BASE_URL="$API_BASE"
 npm ci && npm run build
 
-aws s3 sync dist "s3://YOUR_FRONTEND_BUCKET" --delete
-aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
+aws s3 sync dist "s3://$BUCKET" --delete
+aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*"
 ```
 
-Use outputs: `frontend_bucket_id`, `cloudfront_distribution_id`, `api_base_url_http`.
-
-**HTTPS note:** Browsers may block mixed content if the SPA is on **HTTPS (CloudFront)** and the API is **HTTP (ALB)**. Prefer attaching an **ACM certificate** to the ALB (`certificate_arn` in `terraform.tfvars`) and use `https://` for `VITE_API_BASE_URL`.
+If the ALB is still HTTP-only (`certificate_arn` empty), `api_base_url_https` prints `(configure certificate_arn)` — add an **ACM certificate in the same region as the ALB**, set `certificate_arn`, and re-apply before using the snippet above.
 
 ## 6. GitHub Actions OIDC
 
@@ -123,11 +137,12 @@ Repository secrets (see [`.github/workflows/deploy-aws.yml`](../.github/workflow
 | Secret | Purpose |
 |--------|---------|
 | `AWS_ROLE_TO_ASSUME` | IAM role ARN for OIDC |
-| `VITE_API_BASE_URL` | Public API base URL (ALB) |
+| `VITE_API_BASE_URL` | Public API base URL (use `https://` when the SPA is on CloudFront) |
 | `S3_FRONTEND_BUCKET` | S3 bucket name |
 | `CLOUDFRONT_DIST_ID` | Distribution ID |
-| `ECR_REPOSITORY` | Optional; default `cw3-backend` |
+| `ECR_REPOSITORY` | Optional; default `cw3-backend` (use `{project_name}-backend` from Terraform) |
 | `ECS_CLUSTER_NAME` / `ECS_SERVICE_NAME` | Optional; default `cw3-cluster` / `cw3-backend` |
+| (variable) `AWS_REGION` | Repository **variable** — must match `aws_region` in Terraform (workflow defaults to `us-east-1` if unset) |
 
 ## Remote state (recommended for teams)
 

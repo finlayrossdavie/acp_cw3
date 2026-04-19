@@ -31,3 +31,9 @@ variable "frontend_bucket_name" {
   type        = string
   description = "Globally unique S3 bucket name for static frontend"
 }
+
+variable "secrets_manager_secret_name" {
+  type        = string
+  description = "Secrets Manager secret name (JSON object) for API keys and related env — see infra/README.md"
+  default     = "cw3-secrets"
+}

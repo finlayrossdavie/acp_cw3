@@ -2,15 +2,20 @@
 # Prerequisites: Terraform applied once; GitHub OIDC IAM role; repository secrets set.
 #
 # Required secrets:
-#   AWS_ROLE_TO_ASSUME  — IAM role ARN (OIDC trust to this repo)
-#   VITE_API_BASE_URL     — e.g. http://cw3-api-xxxxx.us-east-1.elb.amazonaws.com (match ALB listener: HTTP or HTTPS)
-#   S3_FRONTEND_BUCKET    — bucket id from terraform output frontend_bucket_id
-#   CLOUDFRONT_DIST_ID    — from terraform output cloudfront_distribution_id
+#   AWS_ROLE_TO_ASSUME   — IAM role ARN (OIDC trust to this repo)
+#   VITE_API_BASE_URL    — Must match the ALB URL + scheme. For CloudFront (HTTPS SPA), use
+#                          https://<alb-dns> (ACM on ALB / certificate_arn in Terraform) — http://
+#                          is blocked by the browser as mixed content.
+#   S3_FRONTEND_BUCKET   — bucket id from terraform output frontend_bucket_id
+#   CLOUDFRONT_DIST_ID   — from terraform output cloudfront_distribution_id
 #
-# Optional:
-#   ECS_CLUSTER_NAME      — default cw3-cluster
-#   ECS_SERVICE_NAME      — default cw3-backend
-#   ECR_REPOSITORY        — default cw3-backend
+# Optional secrets:
+#   ECS_CLUSTER_NAME     — default {project_name}-cluster (see Terraform)
+#   ECS_SERVICE_NAME     — default {project_name}-backend
+#   ECR_REPOSITORY       — default {project_name}-backend (must match aws_ecr_repository name)
+#
+# Repository variable (Settings → Secrets and variables → Actions → Variables):
+#   AWS_REGION           — must match infra/terraform aws_region (default in workflow: us-east-1)
 
 name: Deploy AWS
 
@@ -25,7 +30,7 @@ permissions:
   contents: read
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: ${{ vars.AWS_REGION != '' && vars.AWS_REGION || 'us-east-1' }}
 
 jobs:
   deploy-backend:
