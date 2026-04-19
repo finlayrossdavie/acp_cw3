@@ -23,6 +23,9 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(allowedOrigins.length > 0 ? allowedOrigins : new String[] {"http://localhost:5173"})
-                .allowedMethods("GET", "POST");
+                // Browsers may send OPTIONS preflight for cross-origin fetch; include common headers.
+                .allowedMethods("GET", "POST", "OPTIONS", "HEAD")
+                .allowedHeaders("*")
+                .maxAge(3600);
     }
 }
