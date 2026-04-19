@@ -28,7 +28,8 @@ output "cloudfront_domain_name" {
 }
 
 output "cloudfront_url" {
-  value = "https://${aws_cloudfront_distribution.app.domain_name}"
+  description = "Preferred public URL for the SPA (custom domain if configured, else default CloudFront domain)"
+  value       = trimspace(var.frontend_domain_name) != "" ? "https://${var.frontend_domain_name}" : "https://${aws_cloudfront_distribution.app.domain_name}"
 }
 
 output "cloudfront_distribution_id" {

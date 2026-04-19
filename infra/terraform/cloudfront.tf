@@ -27,6 +27,8 @@ resource "aws_cloudfront_distribution" "app" {
   default_root_object = "index.html"
   comment             = "${var.project_name} frontend"
 
+  aliases = trimspace(var.frontend_domain_name) != "" ? [trimspace(var.frontend_domain_name)] : []
+
   origin {
     domain_name              = aws_s3_bucket.frontend.bucket_regional_domain_name
     origin_id                = "s3-frontend"
@@ -72,12 +74,22 @@ resource "aws_cloudfront_distribution" "app" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = trimspace(var.frontend_domain_name) == ""
+    acm_certificate_arn            = trimspace(var.frontend_domain_name) != "" ? var.cloudfront_acm_certificate_arn : null
+    ssl_support_method             = trimspace(var.frontend_domain_name) != "" ? "sni-only" : null
+    minimum_protocol_version       = trimspace(var.frontend_domain_name) != "" ? "TLSv1.2_2021" : null
   }
 
   price_class = "PriceClass_100"
 
   depends_on = [aws_s3_bucket_public_access_block.frontend]
+
+  lifecycle {
+    precondition {
+      condition     = trimspace(var.frontend_domain_name) == "" || trimspace(var.cloudfront_acm_certificate_arn) != ""
+      error_message = "Set cloudfront_acm_certificate_arn (ACM in us-east-1) when frontend_domain_name is non-empty."
+    }
+  }
 }
 
 data "aws_iam_policy_document" "frontend_bucket_policy" {

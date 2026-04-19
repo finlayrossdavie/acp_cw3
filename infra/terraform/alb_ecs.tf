@@ -1,6 +1,9 @@
 locals {
-  cors_effective = trimspace(var.cors_allowed_origins) != "" ? var.cors_allowed_origins : "https://${aws_cloudfront_distribution.app.domain_name}"
-  redis_host     = aws_elasticache_cluster.redis.cache_nodes[0].address
+  # Browser Origin must match exactly (custom www domain vs default *.cloudfront.net).
+  cors_effective = trimspace(var.cors_allowed_origins) != "" ? var.cors_allowed_origins : (
+    trimspace(var.frontend_domain_name) != "" ? "https://${var.frontend_domain_name}" : "https://${aws_cloudfront_distribution.app.domain_name}"
+  )
+  redis_host = aws_elasticache_cluster.redis.cache_nodes[0].address
 }
 
 resource "aws_cloudwatch_log_group" "ecs_backend" {

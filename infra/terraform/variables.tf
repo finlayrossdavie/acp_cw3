@@ -38,6 +38,18 @@ variable "frontend_bucket_name" {
   description = "Globally unique S3 bucket name for static frontend"
 }
 
+variable "frontend_domain_name" {
+  type        = string
+  description = "Optional custom hostname for the SPA (e.g. www.midtermelectiontracker.com). Requires cloudfront_acm_certificate_arn. DNS: CNAME this name to the CloudFront domain (terraform output cloudfront_domain_name)."
+  default     = ""
+}
+
+variable "cloudfront_acm_certificate_arn" {
+  type        = string
+  description = "ACM certificate ARN in us-east-1 (N. Virginia) for frontend_domain_name — required by CloudFront for alternate domains."
+  default     = ""
+}
+
 variable "secrets_manager_secret_name" {
   type        = string
   description = "Secrets Manager secret name (JSON object) for API keys and related env — see infra/README.md"

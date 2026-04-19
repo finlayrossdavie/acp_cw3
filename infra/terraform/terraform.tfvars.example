@@ -21,6 +21,9 @@ frontend_bucket_name = "cw3-midterm-tracker-frontend-YOURNAME"
 # Optional: override; otherwise Terraform sets CORS to the CloudFront HTTPS URL
 # cors_allowed_origins = "https://d111111abcdef8.cloudfront.net"
 
-# Optional Route 53 alias for the SPA (ACM in us-east-1 for CloudFront is separate if using custom domain on CloudFront)
-# domain_name     = "app.example.com"
-# route53_zone_id = "Z1234567890ABC"
+# Optional: custom SPA hostname (browser URL). CloudFront requires an ACM cert in us-east-1 only (not eu-north-1).
+# 1) Request ACM (us-east-1) for e.g. www.midtermelectiontracker.com, DNS-validate in Cloudflare
+# 2) Set both lines below, then terraform apply
+# 3) Cloudflare DNS: CNAME www -> <terraform output -raw cloudfront_domain_name> (DNS-only / grey cloud)
+# frontend_domain_name             = "www.midtermelectiontracker.com"
+# cloudfront_acm_certificate_arn    = "arn:aws:acm:us-east-1:123456789012:certificate/..."

@@ -105,6 +105,10 @@ aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*"
 
 If the ALB is still HTTP-only (`certificate_arn` empty), `api_base_url_https` prints `(configure certificate_arn)` — add an **ACM certificate in the same region as the ALB**, set `certificate_arn`, and re-apply before using the snippet above.
 
+### Custom domain for the SPA (e.g. `www.midtermelectiontracker.com`)
+
+CloudFront alternate domains need an **ACM certificate in `us-east-1` (N. Virginia)** — not the same region as an `eu-north-1` ALB. Request the cert for your hostname, validate DNS (e.g. Cloudflare), set `frontend_domain_name` and `cloudfront_acm_certificate_arn` in `terraform.tfvars`, run `terraform apply`, then add a **CNAME** in Cloudflare: **`www` →** `terraform output -raw cloudfront_domain_name` (grey cloud / DNS-only). Terraform updates **CORS** on the API to `https://<frontend_domain_name>` unless `cors_allowed_origins` is overridden.
+
 ## 6. GitHub Actions OIDC
 
 Create an IAM role with a **trust policy** like:
