@@ -86,6 +86,21 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Check required secrets for frontend deploy
+        env:
+          S3_FRONTEND_BUCKET: ${{ secrets.S3_FRONTEND_BUCKET }}
+          CLOUDFRONT_DIST_ID: ${{ secrets.CLOUDFRONT_DIST_ID }}
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+        run: |
+          missing=""
+          [ -z "$S3_FRONTEND_BUCKET" ] && missing="$missing S3_FRONTEND_BUCKET"
+          [ -z "$CLOUDFRONT_DIST_ID" ] && missing="$missing CLOUDFRONT_DIST_ID"
+          [ -z "$VITE_API_BASE_URL" ] && missing="$missing VITE_API_BASE_URL"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing GitHub Actions secrets:$missing — add them under Settings → Secrets and variables → Actions. Bucket: terraform output -raw frontend_bucket_id; CloudFront: terraform output -raw cloudfront_distribution_id."
+            exit 1
+          fi
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
