@@ -87,7 +87,7 @@ If the secret uses a **customer-managed KMS key**, add `kms:Decrypt` on that key
 
 ## 5. Build and upload the frontend
 
-Point the UI at the **ALB** URL from Terraform output. For the app served on **CloudFront (HTTPS)**, use **`api_base_url_https`** (requires `certificate_arn` in `terraform.tfvars` and `terraform apply`). **`http://` from an HTTPS page is blocked** (mixed content).
+Point the UI at the public **HTTPS** API URL. For **CloudFront (HTTPS SPA)**, set **`api_public_base_url`** in `terraform.tfvars` to your ACM hostname (e.g. `https://api.example.com`) so `terraform output -raw api_base_url_https` matches what browsers and `VITE_API_BASE_URL` must use. If unset, the output falls back to **`https://<alb-dns>`**. **`http://` from an HTTPS page is blocked** (mixed content).
 
 ```bash
 cd infra/terraform

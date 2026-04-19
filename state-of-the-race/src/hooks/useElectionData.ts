@@ -12,7 +12,7 @@ import {
   applyCurrentSeatParties,
 } from '@/lib/cw3Adapter';
 
-// Dev: default to local backend. Prod: VITE_API_BASE_URL must be set at build time (your ALB HTTPS URL).
+// Dev: default to local backend. Prod: VITE_API_BASE_URL must be set at build time (HTTPS API URL, e.g. api.<domain>).
 // If prod uses localhost or fetch fails (CORS / mixed content), we must not silently show mockData.
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV ? 'http://localhost:8080' : '');
@@ -47,7 +47,7 @@ async function buildMapData(race: RaceType, includeSpending: boolean): Promise<S
   if (!API_BASE || race !== 'senate') {
     if (isProd && race === 'senate' && !API_BASE) {
       throw new Error(
-        'Missing VITE_API_BASE_URL. Rebuild: VITE_API_BASE_URL=https://your-alb... (same origin https avoids mixed-content blocking).'
+        'Missing VITE_API_BASE_URL. Rebuild with HTTPS API URL (e.g. https://api.yourdomain.com).'
       );
     }
     return applyCurrentSeatParties(fallbackCovered);
@@ -56,7 +56,7 @@ async function buildMapData(race: RaceType, includeSpending: boolean): Promise<S
   if (!Array.isArray(summaries) || summaries.length === 0) {
     if (isProd) {
       throw new Error(
-        'Could not load /states from the API (empty or unreachable). Often: mixed content (use https:// ALB URL in VITE_API_BASE_URL), or CORS. Rebuild after fixing.'
+        'Could not load /states from the API (empty or unreachable). Check HTTPS URL, CORS, and DynamoDB data. Rebuild after fixing VITE_API_BASE_URL.'
       );
     }
     return applyCurrentSeatParties(fallbackCovered);

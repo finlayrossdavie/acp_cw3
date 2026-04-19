@@ -21,6 +21,12 @@ variable "certificate_arn" {
   default     = ""
 }
 
+variable "api_public_base_url" {
+  type        = string
+  description = "Public HTTPS API base URL for the SPA (e.g. https://api.example.com) when using a custom hostname (ACM + DNS CNAME to ALB). If empty, api_base_url_https output uses the ALB DNS name."
+  default     = ""
+}
+
 variable "cors_allowed_origins" {
   type        = string
   description = "Comma-separated origins for CORS (must include https://<cloudfront-domain> after deploy)"

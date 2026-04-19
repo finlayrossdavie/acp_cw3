@@ -9,8 +9,11 @@ backend_image = "REPLACE_WITH_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/cw3-bac
 frontend_bucket_name = "cw3-midterm-tracker-frontend-YOURNAME"
 
 # Required for browser access from CloudFront (HTTPS): ACM cert in the same region as the ALB
-# (eu-north-1 ALB → ACM cert in eu-north-1). Then use terraform output api_base_url_https for VITE_API_BASE_URL.
-# certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+# (eu-north-1 ALB → ACM cert in eu-north-1). Then use terraform output -raw api_base_url_https for VITE_API_BASE_URL.
+# certificate_arn = "arn:aws:acm:eu-north-1:123456789012:certificate/..."
+#
+# Optional: custom API hostname (ACM name + DNS CNAME → ALB). If set, api_base_url_https uses this instead of ELB DNS.
+# api_public_base_url = "https://api.midtermelectiontracker.com"
 
 # Secrets Manager JSON secret name (must exist before apply; see infra/README.md §4)
 # secrets_manager_secret_name = "cw3-secrets"

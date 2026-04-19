@@ -16,8 +16,10 @@ output "api_base_url_http" {
 }
 
 output "api_base_url_https" {
-  description = "Use when ACM certificate is configured on the ALB (port 443)"
-  value       = var.certificate_arn != "" ? "https://${aws_lb.api.dns_name}" : "(configure certificate_arn)"
+  description = "Use for VITE_API_BASE_URL when ACM is on the ALB (port 443). Prefers api_public_base_url if set (custom domain)."
+  value = var.certificate_arn != "" ? (
+    trimspace(var.api_public_base_url) != "" ? trimspace(var.api_public_base_url) : "https://${aws_lb.api.dns_name}"
+  ) : "(configure certificate_arn)"
 }
 
 output "cloudfront_domain_name" {

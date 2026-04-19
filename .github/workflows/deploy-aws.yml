@@ -3,9 +3,8 @@
 #
 # Required secrets:
 #   AWS_ROLE_TO_ASSUME   — IAM role ARN (OIDC trust to this repo)
-#   VITE_API_BASE_URL    — Must match the ALB URL + scheme. For CloudFront (HTTPS SPA), use
-#                          https://<alb-dns> (ACM on ALB / certificate_arn in Terraform) — http://
-#                          is blocked by the browser as mixed content.
+#   VITE_API_BASE_URL    — HTTPS API origin the browser calls (e.g. https://api.midtermelectiontracker.com).
+#                          Use the hostname on your ACM cert (CNAME → ALB), not http:// or raw ELB DNS if using HTTPS.
 #   S3_FRONTEND_BUCKET   — bucket id from terraform output frontend_bucket_id
 #   CLOUDFRONT_DIST_ID   — from terraform output cloudfront_distribution_id
 #
